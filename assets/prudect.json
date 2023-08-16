@@ -1,0 +1,269 @@
+{
+  "products": [
+    {
+      "name": "Hiking Boots",
+      "brand": "Venture",
+      "color": "Green",
+      "price": 109.99,
+      "old_price": 129.99,
+      "discount_percentage": 15,
+      "details": "Sturdy hiking boots for outdoor adventures and trekking. The boots are designed to provide optimal support and stability on rugged terrains. With a waterproof membrane, they keep your feet dry and comfortable even during wet conditions. The high-grip outsoles offer superior traction, ensuring you stay steady on challenging trails. The cushioned footbeds and padded collars provide extra comfort during long hikes. These hiking boots are made with premium materials, and their durable construction ensures they can withstand the elements. Whether you're a seasoned hiker or a nature enthusiast, these hiking boots are an ideal companion for your wilderness expeditions.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxv7mfXyOxOoYrgLpLyHQ5WGb0eFufFUjngg&usqp=CAU",
+      "reviews": [
+        {
+          "user": "hiker123",
+          "rating": 5,
+          "review": "These boots are amazing! They provided excellent support during my hiking trip, and the waterproof feature kept my feet dry even in heavy rain."
+        },
+        {
+          "user": "outdoorlover",
+          "rating": 4,
+          "review": "Great boots for outdoor activities. They are comfortable and durable, but I wish they had more color options."
+        }
+      ],
+      "style": "High-top hiking boots",
+      "available_colors": ["Green", "Brown"],
+      "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+      "description": "Experience the thrill of the outdoors with Venture's Hiking Boots. These high-top boots are designed to provide superior support and stability during your adventurous journeys. The waterproof membrane ensures your feet stay dry, while the high-grip outsoles give you the traction you need on rough terrains. The boots are crafted with premium materials and feature cushioned footbeds for all-day comfort. Available in green and brown colors, choose the size that fits you best and embark on unforgettable outdoor explorations with confidence."
+    },
+
+    {
+      "name": "Sneakers",
+      "brand": "Vortex",
+      "color": "Red",
+      "price": 75.25,
+      "old_price": 84.99,
+      "discount_percentage": 11,
+      "details": "Trendy sneakers with a modern design, perfect for casual wear. The sneakers feature a lightweight construction and a stylish color combination. The cushioned insoles offer all-day comfort, making them ideal for everyday use. The durable rubber outsoles provide excellent traction, ensuring a secure grip on various surfaces. Whether you're running errands or meeting friends, these red Vortex sneakers will add a touch of flair to your casual outfits.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp5wD2QL_3X4GmqbM1iVxyz1dI1IMa3i95ag&usqp=CAU",
+      "reviews": [
+        {
+          "user": "fashionista",
+          "rating": 4,
+          "review": "Love the design of these sneakers. They're comfortable and stylish, \nbut they run slightly smaller in size."
+        },
+        {
+          "user": "sneakerhead92",
+          "rating": 5,
+          "review": "Great sneakers with excellent traction. The red color \nstands out and complements my streetwear looks."
+        }
+      ],
+      "style": "Casual sneakers",
+      "available_colors": ["Red", "Black", "White"],
+      "available_sizes": ["US 6", "US 7", "US 8", "US 9", "US 10", "US 11"],
+      "description": "Elevate your street style with Vortex's Sneakers. These trendy sneakers are perfect for those who appreciate comfort and fashion. The modern design features a pop of red that adds a bold statement to any outfit. The cushioned insoles provide a soft feel with every step, making them suitable for all-day wear. The rubber outsoles offer excellent grip, ensuring you can confidently walk on various surfaces. Available in red, black, and white, these sneakers are a versatile addition to your sneaker collection."
+    },
+    {
+      "name": "Classic Loafers",
+      "brand": "Triton",
+      "color": "Brown",
+      "price": 64.50,
+      "old_price": 79.99,
+      "discount_percentage": 19,
+      "details": "Elegant and comfortable loafers for formal occasions. These classic brown loafers are crafted with genuine leather, exuding sophistication and refinement. The slip-on design allows for easy wear, while the cushioned footbeds provide exceptional comfort. The sturdy outsoles offer durability and traction, making them suitable for daily use. Whether you're dressing up for a business meeting or attending a formal event, these Triton loafers are the epitome of timeless style.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibDpA_Jbx_E-za5191ie1BpANyFYpLTLTug&usqp=CAU",
+      "reviews": [
+        {
+          "user": "dapper_gentleman",
+          "rating": 5,
+          "review": "These loafers are impeccable. \nThe leather quality is outstanding,\n and they fit perfectly."
+        },
+        {
+          "user": "business_exec",
+          "rating": 4,
+          "review": "Great formal shoes for the price.\n They're comfortable, but I wish there were more color options."
+        }
+      ],
+      "style": "Classic loafers",
+      "available_colors": ["Brown", "Black"],
+      "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+      "description": "Make a lasting impression with Triton's Classic Loafers. Crafted with premium leather, these loafers exude elegance and class. The slip-on style allows for effortless wear, perfect for business or formal occasions. The cushioned footbeds provide a luxurious feel, ensuring comfort throughout the day. The sturdy outsoles offer durability and traction, making them versatile for daily wear. Available in classic brown and black colors, these loafers are a must-have addition to your formal footwear collection."
+    },
+
+
+
+    {
+      "name": "Hiking Boots",
+      "brand": "Venture",
+      "color": "brown",
+      "price": 109.99,
+      "old_price": 129.99,
+      "discount_percentage": 15,
+      "details": "Sturdy hiking boots for outdoor adventures and trekking. The boots are designed to provide optimal support and stability on rugged terrains. With a waterproof membrane, they keep your feet dry and comfortable even during wet conditions. The high-grip outsoles offer superior traction, ensuring you stay steady on challenging trails. The cushioned footbeds and padded collars provide extra comfort during long hikes. These hiking boots are made with premium materials, and their durable construction ensures they can withstand the elements. Whether you're a seasoned hiker or a nature enthusiast, these hiking boots are an ideal companion for your wilderness expeditions.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiDDKbdwjkufQTZd_AnfSWAADd9_JOrJrCg&usqp=CAU",
+      "reviews": [
+        {
+          "user": "hiker123",
+          "rating": 5,
+          "review": "These boots are amazing! They provided excellent support during my hiking trip, \nand the waterproof feature kept my feet dry even in heavy rain."
+        },
+        {
+          "user": "outdoorlover",
+          "rating": 4,
+          "review": "Great boots for outdoor activities. They are comfortable and durable,\n but I wish they had more color options."
+        }
+      ],
+      "style": "High-top hiking boots",
+      "available_colors": ["Green", "Brown"],
+      "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+      "description": "Experience the thrill of the outdoors with Venture's Hiking Boots. These high-top boots are designed to provide superior support and stability during your adventurous journeys. The waterproof membrane ensures your feet stay dry, while the high-grip outsoles give you the traction you need on rough terrains. The boots are crafted with premium materials and feature cushioned footbeds for all-day comfort. Available in green and brown colors, choose the size that fits you best and embark on unforgettable outdoor explorations with confidence."
+    },
+    {
+      "name": "Sandals",
+      "brand": "Sunrise",
+      "color": "Yellow",
+      "price": 45.00,
+      "old_price": 49.99,
+      "discount_percentage": 10,
+      "details": "Comfortable sandals for everyday wear, suitable for the beach or casual outings. These stylish sandals feature adjustable straps that allow you to customize the fit according to your preference. The cushioned footbeds provide excellent support, making them perfect for long walks and extended wear. The lightweight and flexible outsoles enhance your mobility, making each step comfortable and natural. Whether you're strolling along the shore or exploring a new city, these sandals offer the perfect combination of style and comfort. Embrace the sunny days with these vibrant yellow sandals that are sure to complement any casual outfit.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVg9xjYQOvJBbENjYIFsqlXI-9E8yRsVc3tQ&usqp=CAU",
+      "reviews": [
+        {
+          "user": "beachlover",
+          "rating": 5,
+          "review": "Love these sandals! The adjustable straps allow for a perfect fit,\n and the cushioned footbeds make them incredibly comfortable."
+        },
+        {
+          "user": "traveler23",
+          "rating": 4,
+          "review": "Great casual sandals. The yellow color is vibrant and fun, perfect\n for sunny days at the beach."
+        }
+      ],
+      "style": "Casual sandals",
+      "available_colors": ["Yellow", "Black", "Brown"],
+      "available_sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+      "description": "Step into style and comfort with Sunrise's Sandals. These casual sandals are designed for daily wear, whether you're heading to the beach or going for a casual stroll. The adjustable straps ensure a secure and customizable fit, while the cushioned footbeds provide all-day support. Available in a variety of colors, including yellow, black, and brown, these sandals are the perfect addition to your summer wardrobe. Embrace laid-back vibes and sunny days with these versatile and fashionable sandals that will elevate your casual looks effortlessly."
+    },
+
+    {
+      "name": "Classic Loafers",
+      "brand": "Triton",
+      "color": "Brown",
+      "price": 64.50,
+      "old_price": 79.99,
+      "discount_percentage": 19,
+      "details": "Elegant and comfortable loafers for formal occasions. These classic brown loafers are crafted with genuine leather, exuding sophistication and refinement. The slip-on design allows for easy wear, while the cushioned footbeds provide exceptional comfort. The sturdy outsoles offer durability and traction, making them suitable for daily use. Whether you're dressing up for a business meeting or attending a formal event, these Triton loafers are the epitome of timeless style.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99MWNOq33rpI2IgwSe85x-NI0fd5C0uSquQ&usqp=CAU",
+      "reviews": [
+        {
+          "user": "dapper_gentleman",
+          "rating": 5,
+          "review": "These loafers are impeccable. The leather quality is outstanding,\n and they fit perfectly."
+        },
+        {
+          "user": "business_exec",
+          "rating": 4,
+          "review": "Great formal shoes for the price. They're comfortable,\n but I wish there were more color options."
+        }
+      ],
+      "style": "Classic loafers",
+      "available_colors": ["Brown", "Black"],
+      "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+      "description": "Make a lasting impression with Triton's Classic Loafers. Crafted with premium leather, these loafers exude elegance and class. The slip-on style allows for effortless wear, perfect for business or formal occasions. The cushioned footbeds provide a luxurious feel, ensuring comfort throughout the day. The sturdy outsoles offer durability and traction, making them versatile for daily wear. Available in classic brown and black colors, these loafers are a must-have addition to your formal footwear collection."
+    },
+    {
+      "name": "Chelsa Classic",
+      "brand": "FrostGuard",
+      "color": "Black",
+      "price": 89.50,
+      "old_price": 99.99,
+      "discount_percentage": 10,
+      "details": "Insulated winter boots to keep your feet warm during cold weather. These snow boots are designed to protect your feet from freezing temperatures, snow, and ice. The waterproof construction keeps your feet dry and comfortable, while the soft fleece lining provides added warmth. The durable rubber outsoles offer excellent traction on icy surfaces, reducing the risk of slipping and falling. With a stylish design and functional features, these white FrostGuard winter boots are the perfect choice for winter adventures, ensuring you stay cozy and confident throughout the season.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_W0NxS1ERAreaO4rhA6AQhJI2x7rVWDeCpA&usqp=CAU",
+      "reviews": [
+        {
+          "user": "snow_lover",
+          "rating": 5,
+          "review": "These Chelsa boots are a game-changer! My feet\n stayed warm and dry during snow hikes. Highly recommend!"
+        },
+        {
+          "user": "winter_wanderer",
+          "rating": 4,
+          "review": "Great winter boots, but they run a bit narrow. The Black colo\nr looks stylish and stands out in the snow."
+        }
+      ],
+      "style": "Winter boots",
+      "available_colors": ["White", "Black"],
+      "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+      "description": "Conquer the cold with FrostGuard's Winter Boots. These insulated snow boots are designed to withstand freezing temperatures and harsh winter conditions. The waterproof construction keeps your feet dry, while the soft fleece lining provides cozy warmth. The durable rubber outsoles offer superior grip on icy surfaces, reducing the risk of slips and falls. Available in stylish white and classic black, these winter boots are your go-to choice for outdoor winter adventures. Embrace the chill and explore the winter wonderland with confidence and comfort."
+    },
+    {
+      "name": "Running Shoes",
+      "brand": "SwiftStride",
+      "color": "Purple",
+      "price": 79.99,
+      "old_price": 89.99,
+      "discount_percentage": 11,
+      "details": "Lightweight running shoes engineered for speed and comfort. These high-performance running shoes feature a responsive midsole that absorbs impact and propels you forward, maximizing your speed and efficiency. The breathable mesh uppers ensure proper ventilation, keeping your feet cool and dry during intense workouts. The padded collar and cushioned insoles provide a comfortable fit, making them ideal for long-distance running. The durable rubber outsoles offer excellent traction on various surfaces, making these purple SwiftStride running shoes a perfect choice for athletes and fitness enthusiasts.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOprGRbaoK3elWpjpSGLj1P_6cNfc6SJKxQ&usqp=CAU",
+      "reviews": [
+        {
+          "user": "running_enthusiast",
+          "rating": 4,
+          "review": "Great running shoes with excellent support.\n They're comfortable and lightweight, but I wish they had more color options."
+        },
+        {
+          "user": "fitness_fanatic",
+          "rating": 5,
+          "review": "Fantastic running shoes! The purple color is unique and adds a \nstylish touch to my workout outfits."
+        }
+      ],
+      "style": "Running shoes",
+      "available_colors": ["Purple", "Black", "Gray"],
+      "available_sizes": ["US 6", "US 7", "US 8", "US 9", "US 10", "US 11"],
+      "description": "Reach new heights with SwiftStride's Running Shoes. These lightweight running shoes are designed for maximum performance and comfort. The responsive midsole absorbs impact and propels you forward, giving you an edge in your training. The breathable mesh uppers keep your feet cool and dry during intense workouts. With a padded collar and cushioned insoles, these running shoes offer a comfortable fit for long-distance runs. Available in stylish purple, classic black, and versatile gray, these running shoes are a must-have for athletes and fitness enthusiasts alike."
+    },
+    {
+      "name": "Formal Oxfords",
+      "brand": "Elegance",
+      "color": "White",
+      "price": 99.95,
+      "old_price": 119.99,
+      "discount_percentage": 17,
+      "details": "Classic black Oxfords, ideal for formal events and office attire. These sophisticated Oxfords are crafted with genuine leather, ensuring both style and durability. The lace-up design allows for a secure fit, and the cushioned footbeds offer exceptional comfort for long hours of wear. The sleek and timeless design makes them a versatile choice for various formal occasions. Whether you're attending a business meeting or a special event, these black Elegance Oxfords are a timeless addition to your formal shoe collection.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-nOFgCURgckTgIpdTB8oKZRuM4cqUvJdYrgXaD_5M7bHWlFRatiVGhLWd2d19aMBHrw&usqp=CAU",
+      "reviews": [
+        {
+          "user": "dressed_to_impress",
+          "rating": 5,
+          "review": "Love these Oxfords! They are comfortable and \nlook great with my suits. Highly recommended for formal occasions."
+        },
+        {
+          "user": "office_exec",
+          "rating": 4,
+          "review": "Good quality Oxfords for the price. They fit well\n and add a touch of elegance to my office attire."
+        }
+      ],
+      "style": "Formal Oxfords",
+      "available_colors": ["Black"],
+      "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+      "description": "Step up your formal style with Elegance's Formal Oxfords. Crafted with premium leather, these black Oxfords exude sophistication and class. The lace-up design ensures a secure fit, while the cushioned footbeds provide all-day comfort. Whether you're attending a business meeting or a special event, these timeless Oxfords are a must-have for any formal occasion. Elevate your attire and make a lasting impression with these classic black Formal Oxfords."
+    },
+    {
+      "name": "Slip-On Shoes",
+      "brand": "ComfyWalk",
+      "color": "Grey",
+      "price": 54.99,
+      "old_price": 59.99,
+      "discount_percentage": 8,
+      "details": "Easy-to-wear slip-on shoes, great for casual and daily use. These comfortable slip-on shoes are designed for convenience and style. The elastic side panels allow for easy on and off, making them ideal for busy mornings. The cushioned insoles provide a soft feel, ensuring all-day comfort. The lightweight and flexible outsoles enhance your mobility, making them suitable for various activities. Whether you're running errands or going for a casual outing, these gray ComfyWalk slip-on shoes are a versatile addition to your footwear collection.",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxVkrKF-GqskLUhU77-pf6RvcJDJm_hTZ1w&usqp=CAU",
+      "reviews": [
+        {
+          "user": "comfort_lover",
+          "rating": 5,
+          "review": "These slip-on shoes are incredibly comfortable. I wear them daily for\n running errands, and they are a perfect fit."
+        },
+        {
+          "user": "casual_outing",
+          "rating": 4,
+          "review": "Great casual shoes for the price. The gray color \ncomplements my casual outfits well."
+        }
+      ],
+      "style": "Slip-on shoes",
+      "available_colors": ["Grey", "Navy", "Black"],
+      "available_sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+      "description": "Enjoy ease and comfort with ComfyWalk's Slip-On Shoes. These gray slip-on shoes are designed for convenience and everyday wear. The elastic side panels allow for easy on and off, making them perfect for busy mornings. The cushioned insoles provide a soft and supportive feel, ensuring comfort throughout the day. Whether you're running errands or going for a casual outing, these slip-on shoes offer a versatile and stylish option. Available in gray, navy, and black, these ComfyWalk shoes are a must-have for effortless style and comfort."
+    }
+  ]
+}

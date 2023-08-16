@@ -1,0 +1,64 @@
+{
+  "shoes": [
+    {
+      "name": "Air Max 270",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWGbv6jnQ1HeteAjaGV_603PjJgXHb8UZbxg&usqp=CAU",
+      "details": "The Air Max 270 combines style and comfort with its large Air unit in the heel.",
+      "price_inr": 7999
+    },
+    {
+      "name": "React Infinity Run",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaYqHPnFED360E1XM-eqjMMXQ4UdqqwfPCGQ&usqp=CAU",
+      "details": "The React Infinity Run is designed to help reduce the risk of running-related injuries.",
+      "price_inr": 6999
+    },
+    {
+      "name": "Joyride Run Flyknit",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKAfP6_mLoNHzV0rAFNQfVBeOLYEqf7Sj5KtKGd_KUfRjAue8zhAVQUs5cJV_HKpu-v4&usqp=CAU",
+      "details": "The Joyride Run Flyknit features tiny foam beads in the sole for a cushioned feel.",
+      "price_inr": 8499
+    },
+    {
+      "name": "Air Zoom Pegasus 38",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZYb7Gg3VzL3WCZVYlAotJ9ZTgLZnKrCcIm95N1kjyqAnKXe-3jBGJsZ9O2vEQJk9P5C0&usqp=CAU",
+      "details": "The Air Zoom Pegasus 38 is a versatile and responsive running shoe.",
+      "price_inr": 7499
+    },
+    {
+      "name": "Blazer Mid '77 Vintage",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7HgTj4rAnmYRfN1_2avaqWk1fZ2sEkbNlLw&usqp=CAU",
+      "details": "The Blazer Mid '77 Vintage offers a classic basketball shoe look with a retro feel.",
+      "price_inr": 5999
+    },
+    {
+      "name": "Air Force 1",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWWkCst-1hvNRDP8DVTwGZ1wcBkydC4fxkksg1DxXi8PkePLGsA6Nr1Bef6ixgViHoetQ&usqp=CAU",
+      "details": "The Air Force 1 is an iconic basketball shoe that's perfect for everyday wear.",
+      "price_inr": 6499
+    },
+    {
+      "name": "Air Jordan 1 Retro High",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhJBk2oHWpef-tVGyi1UNzuDuH8Mheq46Tvf5go_50hk8MJzAM_bG4PnKSm1BL1SO630&usqp=CAU",
+      "details": "The Air Jordan 1 Retro High is a legendary sneaker in the Jordan lineup.",
+      "price_inr": 8999
+    },
+    {
+      "name": "Court Vision Low",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMQOJL8ZzLbFyy5aZVZwx3xFHsINfLi5xW9Q&usqp=CAU",
+      "details": "The Court Vision Low brings a classic basketball-inspired design to the streets.",
+      "price_inr": 5499
+    },
+    {
+      "name": "Revolution 5",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4-0voJ3ZWYA1SdD0wyXpAX4iA-THkkYmiwrkYeZY4v3iZHbggekS8dhk5lXPwj0CzWA&usqp=CAU",
+      "details": "The Revolution 5 offers lightweight cushioning for your daily runs.",
+      "price_inr": 4299
+    },
+    {
+      "name": "Benassi JDI",
+      "image_url": "https://static.nike.com/a/images/t_default/195f7c13-8c09-46b5-8be5-05dc29500055/pegasus-flyease-se-easy-on-off-road-running-shoes-cxWMNn.png",
+      "details": "The Benassi JDI is a comfortable slide for post-game or casual wear.",
+      "price_inr": 2499
+    }
+  ]
+}
