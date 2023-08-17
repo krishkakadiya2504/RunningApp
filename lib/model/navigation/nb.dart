@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:running/controller/CartController.dart';
 import 'package:running/pages/profile/profilepage.dart';
 
-import '../../database/firebase/notifictionservices.dart';
+import '../../pages/notification/notifictionservices.dart';
 import '../../pages/Catogry/Catogry.dart';
 import '../../pages/Home/HomePage.dart';
 import '../../pages/cart/cart.dart';
