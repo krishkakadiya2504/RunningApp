@@ -43,6 +43,7 @@ class CartProvider extends ChangeNotifier {
     wishlistItems.clear();
     notifyListeners();
   }
+
   Future<void> moveAllWishlistToCart() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
@@ -83,6 +84,7 @@ class CartProvider extends ChangeNotifier {
       print('Error moving wishlist to cart: $error');
     }
   }
+
   Future<void> _saveShoppingDetails({
     required String address,
     required String mobileNumber,
@@ -184,9 +186,12 @@ class CartProvider extends ChangeNotifier {
       if (cartSnapshot.exists) {
         // Product already exists in cart, update the quantity
         final currentQuantity = (cartSnapshot.data()?['quantity'] ?? 0) + 1;
+        final currentPrice = (cartSnapshot.data()?['price'] ?? 0.0) + product.price;
+
 
         await cartRef.update({
           'quantity': currentQuantity,
+          'price' : currentPrice,
         });
       } else {
         // Product doesn't exist in cart, add it
@@ -208,7 +213,52 @@ class CartProvider extends ChangeNotifier {
       print('Error adding to cart and Firestore: $error');
     }
   }
-  void removeFromCart(String productName) async {
+  Future<void> removeFromCartAndFirestore(String productName) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      // Handle the case where the user is not authenticated
+      return;
+    }
+
+    try {
+      final cartRef = FirebaseFirestore.instance
+          .collection('Registration')
+          .doc(user.uid)
+          .collection('cart')
+          .doc(productName); // Use the product name to locate the document
+
+      final cartSnapshot = await cartRef.get();
+
+      if (cartSnapshot.exists) {
+        final currentQuantity = (cartSnapshot.data()?['quantity'] ?? 0) - 1;
+        final productPrice = cartSnapshot.data()?['price'] ?? 0.0;
+        final newPrice = productPrice - (productPrice / cartSnapshot.data()?['quantity']); // Adjust the price based on quantity
+
+        if (currentQuantity <= 0) {
+          // If quantity is zero or negative, remove the product from cart
+          await cartRef.delete();
+        } else {
+          await cartRef.update({
+            'quantity': currentQuantity,
+            'price': newPrice,
+          });
+        }
+
+        // Remove the product from the local cart
+        final removedProduct = _cartItems.firstWhere((product) => product.name == productName);
+        _cartItems.remove(removedProduct);
+        notifyListeners();
+      } else {
+        // Product doesn't exist in cart, do nothing or handle the case
+      }
+    } catch (error) {
+      // Handle any errors that occur during the process
+      print('Error removing from cart and Firestore: $error');
+    }
+  }
+
+
+  void removeFromWishList (String productName) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       // Handle the case where the user is not authenticated
@@ -279,13 +329,15 @@ class CartProvider extends ChangeNotifier {
           .doc(product.name);
 
       final cartSnapshot = await cartRef.get();
-
       if (cartSnapshot.exists) {
         // Product already exists in cart, update the quantity
         final currentQuantity = (cartSnapshot.data()?['quantity'] ?? 0) + 1;
+        final currentPrice = (cartSnapshot.data()?['price'] ?? 0.0) + product.price;
+
 
         await cartRef.update({
           'quantity': currentQuantity,
+          'price' : currentPrice,
         });
       } else {
         // Product doesn't exist in cart, add it

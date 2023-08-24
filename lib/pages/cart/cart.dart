@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import 'package:running/model/product/s1.dart';
 import '../../controller/CartController.dart';
 import '../Item_and_buy/Buypage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart'; // Import Firestore
@@ -41,35 +40,34 @@ class CartScreen extends StatelessWidget {
                   itemCount: snapshot.data!.docs.length,
                   itemBuilder: (context, index) {
                     var cartItem = snapshot.data!.docs[index].data();
-                    var item =snapshot.data!.docs[index];
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Card(
                         child: ListTile(
                           leading: Image.network(cartItem['image']),
                           title: Center(child: Text(cartItem['productName'])),
-                          trailing:IconButton(
+                          trailing: IconButton(
                             onPressed: () {
-                              final productName = cartItem['productName']; // Use the unique identifier of the product
-                              cartProvider.removeFromCart(productName);
+                              final productName = cartItem['productName'];
+                              cartProvider.removeFromCartAndFirestore(productName).then((_) {
+                                // Handle any post-removal actions if needed
+                              });
                             },
                             icon: Icon(Icons.delete_forever_outlined),
                           ),
-
                           subtitle: Column(
                             children: [
-
                               Text(
-                                "\$${cartItem['price']?.toStringAsFixed(2) ?? 'N/A'}",
-                                // Use null-aware operator and null-coalescing operator
+                                "\$${cartItem['price']?.toStringAsFixed(2) ?? 'N/A'}\n Quantity : X ${cartItem['quantity']}",
                                 style: TextStyle(
                                   color: Colors.red,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                               Text(
-                                  cartItem['details'] ?? 'No details available',
-                                  maxLines: 2),
+                                cartItem['details'] ?? 'No details available',
+                                maxLines: 2,
+                              ),
                             ],
                           ),
                         ),
@@ -77,6 +75,7 @@ class CartScreen extends StatelessWidget {
                     );
                   },
                 ),
+
               ),
               FutureBuilder<double>(
                 future: cartProvider.fetchTotalCartPriceFromFirestore(),
@@ -106,7 +105,7 @@ class CartScreen extends StatelessWidget {
                             height: MediaQuery.of(context).size.height * 0.01,
                           ),
                           Text(
-                            'TotalItemsInCart: ${totalCartItem}',
+                            'TotalItemsInCart: $totalCartItem',
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,

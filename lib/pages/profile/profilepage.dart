@@ -144,10 +144,7 @@ class _ProfilScreenState extends State<ProfilScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // double width = MediaQuery
-    //     .of(context)
-    //     .size
-    //     .width;
+
     double height = MediaQuery.of(context).size.height;
     var mediaQuery = MediaQuery.of(context).size;
     return Center(
@@ -218,22 +215,24 @@ class _ProfilScreenState extends State<ProfilScreen> {
                                               fontSize: 16,
                                               fontWeight: FontWeight.w900,
                                             )),
-                                        TextFormField(
-                                            style:  TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w700,
-                                            ),
-                                            readOnly: !isEditing.value,
-                                            controller: namecontroller,
-                                            decoration: const InputDecoration(
-                                              hintStyle: TextStyle(
-                                                decoration: TextDecoration.underline,
+                                        Obx(
+                                          () =>  TextFormField(
+                                              style:  TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.w700,
                                               ),
+                                              readOnly: !isEditing.value,
+                                              controller: namecontroller,
+                                              decoration: const InputDecoration(
+                                                hintStyle: TextStyle(
+                                                  decoration: TextDecoration.underline,
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w700,
+                                                ),
 
+                                              ),
                                             ),
-                                          ),
+                                        ),
 
                                         SizedBox(height: mediaQuery.height * 0.01),
 
@@ -269,21 +268,23 @@ class _ProfilScreenState extends State<ProfilScreen> {
                                             )),
 
 
-                                          TextFormField(
-                                            style: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w700,
-                                            ),
-                                            readOnly: !isEditing.value,
-                                            controller: phonecontroller,
-                                            decoration: const InputDecoration(
-                                              hintText: '+91',
-                                              hintStyle: TextStyle(
-                                                decoration: TextDecoration.underline,
+                                          Obx(
+                                            () =>  TextFormField(
+                                              style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.w700,
                                               ),
+                                              readOnly: !isEditing.value,
+                                              controller: phonecontroller,
+                                              decoration: const InputDecoration(
+                                                hintText: '+91',
+                                                hintStyle: TextStyle(
+                                                  decoration: TextDecoration.underline,
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w700,
+                                                ),
 
+                                              ),
                                             ),
                                           ),
 
@@ -295,27 +296,29 @@ class _ProfilScreenState extends State<ProfilScreen> {
                                               fontSize: 16,
                                               fontWeight: FontWeight.w900,
                                             )),
-                                       TextFormField(
+                                       Obx(
+                                         () =>  TextFormField(
 
-                                            readOnly: !isEditing.value,
-                                            maxLength: 30,
-                                            controller: Biocontrol,
-                                            style:  TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w700,
-                                            ),
-                                            decoration: const InputDecoration(
-
-                                              hintText: 'Bio',
-                                              hintStyle: TextStyle(
-                                                decoration: TextDecoration.underline,
+                                              readOnly: !isEditing.value,
+                                              maxLength: 30,
+                                              controller: Biocontrol,
+                                              style:  TextStyle(
                                                 fontSize: 16,
-                                                fontWeight: FontWeight.bold,
+                                                fontWeight: FontWeight.w700,
+                                              ),
+                                              decoration: const InputDecoration(
+
+                                                hintText: 'Bio',
+                                                hintStyle: TextStyle(
+                                                  decoration: TextDecoration.underline,
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold,
+
+                                                ),
 
                                               ),
-
                                             ),
-                                          ),
+                                       ),
 
                                         // SizedBox(height: mediaQuery.height * 0.01),
 
@@ -394,7 +397,7 @@ class _ProfilScreenState extends State<ProfilScreen> {
                               alignment: Alignment.center,
                               child:Obx(() {
                                 final imageUrl = ProfileImageUrl.value;
-                                if (imageUrl != null && imageUrl.isNotEmpty) {
+                                if (imageUrl.isNotEmpty) {
                                   return CircleAvatar(
                                     backgroundColor: Colors.black,
                                     maxRadius: innerHeight * 0.1,

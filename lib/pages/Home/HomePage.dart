@@ -122,14 +122,16 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: mediaQueryh * 0.02,
               ),
-              AnimatedSmoothIndicator(
-                activeIndex: currentIndex,
-                count: 7,
-                effect: ScaleEffect(
-                  activeDotColor: Colors.black,
-                  dotColor: Colors.black12,
-                  dotHeight: mediaQueryh * 0.01,
-                  dotWidth: mediaQueryw * 0.02,
+              Obx(
+                () =>  AnimatedSmoothIndicator(
+                  activeIndex: carouselController.currentIndex.value ,
+                  count: 7,
+                  effect: ExpandingDotsEffect(
+                    activeDotColor: Colors.black,
+                    dotColor: Colors.black12,
+                    dotHeight: mediaQueryh * 0.01,
+                    dotWidth: mediaQueryw * 0.02,
+                  ),
                 ),
               ),
               SizedBox(

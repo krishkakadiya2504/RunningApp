@@ -69,7 +69,7 @@ class _favoriteState extends State<favorite> {
                                 icon: Icon(Icons.delete),
                                 onPressed: () {
                                   final productName = WishlistItem['productName']; // Use the unique identifier of the product
-                                  cartProvider.removeFromCart(productName);
+                                  cartProvider.removeFromWishList(productName);
                                 },
                               ),
                             ],
@@ -79,7 +79,8 @@ class _favoriteState extends State<favorite> {
                               children: [
 
                                 Text(
-                                  "\$${WishlistItem['price']?.toStringAsFixed(2) ?? 'N/A'}",
+                                  "\$${WishlistItem['price']?.toStringAsFixed(2) ?? 'N/A'}\nQuantity : X ${WishlistItem['quantity']}",
+
                                   // Use null-aware operator and null-coalescing operator
                                   style: TextStyle(
                                     color: Colors.red,

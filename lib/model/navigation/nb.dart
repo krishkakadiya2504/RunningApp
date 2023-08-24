@@ -66,7 +66,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                       },
                       child: Icon(Icons.shopping_cart)),
                   Text(
-                    cartProvider.cartItems.length.toString(),
+                    cartProvider.totalCartitem,
                     style: TextStyle(fontSize: 10),
                   )
                 ],
