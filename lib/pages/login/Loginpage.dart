@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
+import 'package:running/pages/Home/HomePage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../model/navigation/nb.dart';
 import 'Creatuser.dart';
@@ -105,7 +106,8 @@ class _LoginPageState extends State<LoginPage> {
           SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setString('islogin', '${email}');
           // Continue with navigation or other actions
-          Get.off(BottomNavBar());
+          Get.off(    HomePage(),
+          );
         }
       } catch (error) {
         print("Email/Password Sign-In Error: $error");
